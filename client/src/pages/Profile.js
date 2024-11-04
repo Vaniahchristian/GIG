@@ -11,7 +11,7 @@ const Profile = () => {
         const fetchProfile = async () => {
             try {
                 const token = localStorage.getItem('token');
-                const res = await axios.get('http://localhost:5000/api/profile', {
+                const res = await axios.get('https://gig-backend.onrender.com/api/profile', {
                     headers: { 'x-auth-token': token }
                 });
                 setUser(res.data);

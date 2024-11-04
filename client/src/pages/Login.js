@@ -14,7 +14,7 @@ const Login = () => {
         e.preventDefault();
         setError(null);
         try {
-            const res = await axios.post('http://localhost:5000/api/login', form);
+            const res = await axios.post('https://gig-backend.onrender.com/api/login', form);
             localStorage.setItem('token', res.data.token);
             alert("Logged in successfully");
         } catch (error) {

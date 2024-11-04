@@ -14,7 +14,7 @@ const Register = () => {
         e.preventDefault();
         setError(null);
         try {
-            await axios.post('http://localhost:5000/api/register', form);
+            await axios.post('https://gig-backend.onrender.com/api/register', form);
             alert("Registered successfully");
         } catch (error) {
             setError("Registration failed. Please try again.");
